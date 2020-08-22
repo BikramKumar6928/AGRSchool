@@ -23,6 +23,40 @@
 			label {
 				display: block;
 			}
+			h1 {
+				display: block;
+				text-align: center;
+			}
+			.required-asterisk {
+				color: red;
+			}
+			.subjects {
+				padding: 0.25em;
+			}
+			.subjects-inner {
+				border: 1px solid black;
+				border-radius: 1em;
+				padding: 0.5em;
+			}
+			.splash-image {
+				width: 100%;
+			}
+			.splash-image-col {
+				width: 100%;
+				padding-left: 0em !important;
+				padding-right: 0em !important;
+			}
+			#subjects {
+				padding-left: 0.25em;
+				padding-right: 0.25em;
+			}
+			.splash-text {
+				position: absolute;
+				bottom: 20vh;
+				left: 20%;
+				color: yellow;
+				text-align: center;
+			}
 		</style>
 
 		<script>
@@ -60,52 +94,190 @@
 	</head>
 	<body>
 		<div class="row">
-			<div class="col-md-6">
-				<form
-					class="form"
-					id="form"
-					method="POST"
-					action="https://docs.google.com/forms/d/e/1FAIpQLSeVGaVx6dPa_diRY2znOshmrGRY2pTikZ-ToVS1T24ghnSRTw/formResponse"
-				>
-					<label
-						>Name:-
-						<input
-							id="name"
-							class="form-control"
-							type="text"
-							name="entry.1210300483"
-						/>
-					</label>
-					<label
-						>Email:-
-						<input
-							id="email"
-							class="form-control"
-							type="email"
-							name="entry.452162737"
-						/>
-					</label>
-					<label
-						>Mobile Number:-
-						<input
-							id="mobile"
-							class="form-control"
-							type="tel"
-							name="entry.1693672880"
-						/>
-					</label>
-					<label>
-						Comments:-
-						<textarea
-							id="comments"
-							class="form-control"
-							name="entry.1889174082"
-							cols="30"
-							rows="10"
-						></textarea>
-					</label>
-					<input class="form-control" type="submit" value="submit" />
-				</form>
+			<div>
+				<div class="col-md-12 splash-image-col">
+					<img
+						class="splash-image"
+						src="images/temp.jpg"
+						alt="temp image"
+					/>
+				</div>
+				<div class="splash-text">
+					<div class="splash-heading">
+						<h1>Welcome to zero interupption of learning</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div id="subjects" class="row">
+				<div class="col-md-12">
+					<h1>Subjects Offered</h1>
+				</div>
+				<div class="col-md-6 subjects">
+					<div class="subjects-inner">
+						<h2>Mathematics</h2>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Maxime quisquam quasi reprehenderit sequi
+							dolorem sunt voluptates aperiam veniam magnam
+							impedit saepe praesentium eligendi at, ad
+							dignissimos eius officia aliquam. Aut!
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 subjects">
+					<div class="subjects-inner">
+						<h2>English</h2>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Maxime quisquam quasi reprehenderit sequi
+							dolorem sunt voluptates aperiam veniam magnam
+							impedit saepe praesentium eligendi at, ad
+							dignissimos eius officia aliquam. Aut!
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 subjects">
+					<div class="subjects-inner">
+						<h2>Regional / Mother Tongue</h2>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Maxime quisquam quasi reprehenderit sequi
+							dolorem sunt voluptates aperiam veniam magnam
+							impedit saepe praesentium eligendi at, ad
+							dignissimos eius officia aliquam. Aut!
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 subjects">
+					<div class="subjects-inner">
+						<h2>Science</h2>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Maxime quisquam quasi reprehenderit sequi
+							dolorem sunt voluptates aperiam veniam magnam
+							impedit saepe praesentium eligendi at, ad
+							dignissimos eius officia aliquam. Aut!
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 subjects">
+					<div class="subjects-inner">
+						<h2>Social Science</h2>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Maxime quisquam quasi reprehenderit sequi
+							dolorem sunt voluptates aperiam veniam magnam
+							impedit saepe praesentium eligendi at, ad
+							dignissimos eius officia aliquam. Aut!
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 subjects">
+					<div class="subjects-inner">
+						<h2>EVS</h2>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Maxime quisquam quasi reprehenderit sequi
+							dolorem sunt voluptates aperiam veniam magnam
+							impedit saepe praesentium eligendi at, ad
+							dignissimos eius officia aliquam. Aut!
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h1>
+						Courses Available
+					</h1>
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing
+						elit. Quae, repellendus officiis! Quaerat odit, mollitia
+						voluptatibus, ab suscipit totam ad a illum illo beatae
+						ea consequuntur, ducimus facilis esse pariatur vero.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Odit nulla, labore rerum tenetur perferendis consequatur
+						voluptatibus ad corrupti. Illum quod necessitatibus
+						totam dolor laboriosam. Quis consectetur eaque illo sit
+						adipisci.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h1>
+						Query form
+					</h1>
+				</div>
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<form
+						class="form"
+						id="form"
+						style="display: flex; flex-direction: column;"
+						method="POST"
+						action="https://docs.google.com/forms/d/e/1FAIpQLSeVGaVx6dPa_diRY2znOshmrGRY2pTikZ-ToVS1T24ghnSRTw/formResponse"
+					>
+						<label
+							>Name
+							<span class="required-asterisk">*</span>
+							<input
+								id="name"
+								class="form-control"
+								type="text"
+								name="entry.1210300483"
+								placeholder="Please Enter Your Name"
+								required
+							/>
+						</label>
+						<label
+							>Email
+							<span class="required-asterisk">*</span>
+							<input
+								id="email"
+								class="form-control"
+								type="email"
+								name="entry.452162737"
+								placeholder="Please Enter Your Email Address"
+								required
+							/>
+						</label>
+						<label
+							>Mobile Number
+							<span class="required-asterisk">*</span>
+							<input
+								id="mobile"
+								class="form-control"
+								type="tel"
+								name="entry.1693672880"
+								placeholder="Please Enter Your Mobile Number"
+								required
+							/>
+						</label>
+						<label>
+							Comments
+							<textarea
+								id="comments"
+								class="form-control"
+								name="entry.1889174082"
+								placeholder="Please Enter Your Query"
+								cols="30"
+								rows="5"
+							></textarea>
+						</label>
+						<button
+							class="btn btn-primary"
+							value="submit"
+							style="align-self: center;"
+						>
+							Submit
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</body>
