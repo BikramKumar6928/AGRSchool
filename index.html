@@ -20,48 +20,91 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 		<style>
-			iframe {
-				display: block;
-				width: 100%;
-				height: 100%;
-			}
 			label {
 				display: block;
 			}
 		</style>
+
+		<script>
+			$(document).ready(function () {
+				$("#form").on("submit", function (event) {
+					event.preventDefault();
+					var name = $("#name").val();
+					var email = $("#email").val();
+					var mobile = $("#mobile").val();
+					var comments = $("#comments").val();
+
+					var settings = {
+						url:
+							"https://docs.google.com/forms/d/e/1FAIpQLSeVGaVx6dPa_diRY2znOshmrGRY2pTikZ-ToVS1T24ghnSRTw/formResponse",
+						method: "POST",
+						timeout: 0,
+						headers: {
+							"Content-Type": "application/x-www-form-urlencoded",
+						},
+						data: {
+							"entry.1210300483": name,
+							"entry.452162737": email,
+							"entry.1693672880": mobile,
+							"entry.1889174082": comments,
+						},
+					};
+
+					$.ajax(settings).done(function (response) {
+						console.log(response);
+					});
+				});
+			});
+		</script>
 	</head>
 	<body>
-		<div class="">
-			<div class="row">
-				<div class="col-md-6">
-					<form
-						id="mG61Hd"
-						method="POST"
-						action="https://docs.google.com/forms/d/e/1FAIpQLSeVGaVx6dPa_diRY2znOshmrGRY2pTikZ-ToVS1T24ghnSRTw/formResponse"
-					>
-						<label
-							>Name:-
-							<input type="text" name="entry.1210300483" />
-						</label>
-						<label
-							>Email:-
-							<input type="email" name="entry.452162737" />
-						</label>
-						<label
-							>Mobile Number:-
-							<input type="number" name="entry.1693672880" />
-						</label>
-						<label>
-							Comments:-
-							<textarea
-								name="entry.1889174082"
-								cols="30"
-								rows="10"
-							></textarea>
-						</label>
-						<input type="submit" value="submit" />
-					</form>
-				</div>
+		<div class="row">
+			<div class="col-md-6">
+				<form
+					class="form"
+					id="form"
+					method="POST"
+					action="https://docs.google.com/forms/d/e/1FAIpQLSeVGaVx6dPa_diRY2znOshmrGRY2pTikZ-ToVS1T24ghnSRTw/formResponse"
+				>
+					<label
+						>Name:-
+						<input
+							id="name"
+							class="form-control"
+							type="text"
+							name="entry.1210300483"
+						/>
+					</label>
+					<label
+						>Email:-
+						<input
+							id="email"
+							class="form-control"
+							type="email"
+							name="entry.452162737"
+						/>
+					</label>
+					<label
+						>Mobile Number:-
+						<input
+							id="mobile"
+							class="form-control"
+							type="tel"
+							name="entry.1693672880"
+						/>
+					</label>
+					<label>
+						Comments:-
+						<textarea
+							id="comments"
+							class="form-control"
+							name="entry.1889174082"
+							cols="30"
+							rows="10"
+						></textarea>
+					</label>
+					<input class="form-control" type="submit" value="submit" />
+				</form>
 			</div>
 		</div>
 	</body>
