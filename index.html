@@ -39,6 +39,7 @@
 				padding: 0.5em;
 			}
 			.splash-image {
+				display: flex;
 				width: 100%;
 			}
 			.splash-image-col {
@@ -52,10 +53,15 @@
 			}
 			.splash-text {
 				position: absolute;
-				bottom: 20%;
-				left: 20%;
+				justify-self: center;
+				align-self: center;
 				color: yellow;
+				text-shadow: 2px 2px black;
 				text-align: center;
+				width: 100%;
+			}
+			.align-right {
+				text-align: right;
 			}
 		</style>
 
@@ -93,7 +99,7 @@
 		</script>
 	</head>
 	<body>
-		<div>
+		<div class="splash-image">
 			<div class="splash-image-col">
 				<img
 					class="splash-image"
@@ -102,8 +108,18 @@
 				/>
 			</div>
 			<div class="splash-text">
-				<div class="splash-heading">
-					<h1>Welcome to zero interupption of learning</h1>
+				<div class="container">
+					<div class="splash-heading">
+						<h1>AGR Online School</h1>
+					</div>
+					<div>
+						<p>
+							Welcome to zero interupption of learning
+						</p>
+						<p class="align-right">
+							Shaping the future
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
