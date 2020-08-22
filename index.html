@@ -4,16 +4,65 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<!-- Latest compiled and minified CSS -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<style>
+			iframe {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			label {
+				display: block;
+			}
+		</style>
 	</head>
 	<body>
-		<iframe
-			src="https://docs.google.com/forms/d/e/1FAIpQLSeVGaVx6dPa_diRY2znOshmrGRY2pTikZ-ToVS1T24ghnSRTw/viewform?embedded=true"
-			width="640"
-			height="930"
-			frameborder="0"
-			marginheight="0"
-			marginwidth="0"
-			>Loading…</iframe
-		>
+		<div class="">
+			<div class="row">
+				<div class="col-md-6">
+					<form
+						id="mG61Hd"
+						method="POST"
+						action="https://docs.google.com/forms/d/e/1FAIpQLSeVGaVx6dPa_diRY2znOshmrGRY2pTikZ-ToVS1T24ghnSRTw/formResponse"
+					>
+						<label
+							>Name:-
+							<input type="text" name="entry.1210300483" />
+						</label>
+						<label
+							>Email:-
+							<input type="email" name="entry.452162737" />
+						</label>
+						<label
+							>Mobile Number:-
+							<input type="number" name="entry.1693672880" />
+						</label>
+						<label>
+							Comments:-
+							<textarea
+								name="entry.1889174082"
+								cols="30"
+								rows="10"
+							></textarea>
+						</label>
+						<input type="submit" value="submit" />
+					</form>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
