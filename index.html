@@ -99,7 +99,9 @@
 				var converter = new showdown.Converter();
 
 				function setMarkdownAsHTMLInID(fileName, id) {
-					var contentBasePath = "/content";
+					var basePath =
+						"https://raw.githubusercontent.com/BikramKumar6928/AGRSchool/master";
+					var contentBasePath = basePath + "/content";
 					$.ajax({
 						url: contentBasePath + "/" + fileName,
 						success: function (data) {
