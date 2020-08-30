@@ -83,8 +83,10 @@
 
 		<script>
 			$(document).ready(function () {
+				var basePath =
+					"https://raw.githubusercontent.com/BikramKumar6928/AGRSchool/master";
 				$.ajax({
-					url: "/images",
+					url: basePath + "/images",
 					success: function (data) {
 						console.log("1st");
 						$(data)
@@ -108,8 +110,6 @@
 				var converter = new showdown.Converter();
 
 				function setMarkdownAsHTMLInID(fileName, id) {
-					var basePath =
-						"https://raw.githubusercontent.com/BikramKumar6928/AGRSchool/master";
 					var contentBasePath = basePath + "/content";
 					$.ajax({
 						url: contentBasePath + "/" + fileName,
